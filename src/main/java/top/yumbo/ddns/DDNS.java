@@ -41,7 +41,7 @@ public class DDNS {
     public static void main(String[] args) {
 
 //        scheduleUpdate();
-//        DDNS.updateDNS(InternetConfig.domainName, InternetConfig.recordType);// 更新dns
+        DDNS.updateDNS(InternetConfig.domainName, InternetConfig.recordType);// 更新dns
     }
 
     /**

@@ -37,13 +37,17 @@ public class InternetConfig {
 
 运行AutoPPPOE代码，然后断网测试一下是否能重连，以及测试一下DDNS代码是否有效
 
-如果DDNS
+可以先单独测试ddns，修改配置文件后运行DDNS中的main然后到阿里云上的dns检验一下dns记录有没有更改
+
+确认没有问题后，将其打包成jar设置为开机自启动即可
 
 #### 三、打包成jar
 
-通过idea由此的maven生命周期 package进行打包即可
+通过idea右侧的maven生命周期的 package进行打包即可
 
 也可以使用 mvn clean package 进行打包
+
+如果遇到编译插件报红问题：[解决IDEA插件 报红问题](https://blog.csdn.net/qq_41813208/article/details/113873771)
 
 #### 四、创建开机启动项
 
